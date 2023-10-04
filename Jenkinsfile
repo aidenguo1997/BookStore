@@ -7,7 +7,7 @@ pipeline {
     
 	environment {
         final testFolder = "testCase"
-        final mail = "username@yahoo.com"
+        final mail = "ab22213395@gmail.com"
         final jobName = "${currentBuild.fullDisplayName}"
         final karaterReport = "${env.WORKSPACE}/${testFolder}/target/karate-reports"
         final report = "${env.WORKSPACE}/report"
@@ -16,8 +16,8 @@ pipeline {
         final url = env.JENKINS_URL.replaceAll("8080", dockerPort);
         final imageName = "env"
         final dockerName = "api"
-        final apiRep = "git@github.com:username/BookStore.git"
-        final testCaseRep = "git@github.com:username/TestCase.git"
+        final apiRep = "git@github.com:aidenguo1997/BookStore.git"
+        final testCaseRep = "git@github.com:aidenguo1997/Test_Case.git"
         final swaggerURL = "${url}v3/api-docs"
         apiUrl = "${url}swagger-ui/index.html"
 	}
