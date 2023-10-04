@@ -7,7 +7,7 @@ pipeline {
     
 	environment {
         final testFolder = "testCase"
-        final mail = "ab22213395@gmail.com"
+        final mail = "ab22213395@yahoo.com.tw"
         final jobName = "${currentBuild.fullDisplayName}"
         final karaterReport = "${env.WORKSPACE}/${testFolder}/target/karate-reports"
         final report = "${env.WORKSPACE}/report"
