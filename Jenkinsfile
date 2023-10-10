@@ -12,7 +12,7 @@ pipeline {
         final karaterReport = "${env.WORKSPACE}/${testFolder}/target/karate-reports"
         final report = "${env.WORKSPACE}/report"
         final emailTemplate = "${JENKINS_HOME}/email-templates"
-        final dockerPort = "8084"
+        final dockerPort = "8085"
         final url = env.JENKINS_URL.replaceAll("8080", dockerPort);
         final imageName = "env"
         final dockerName = "api"
